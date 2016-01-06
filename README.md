@@ -1,10 +1,10 @@
 
 # socket.io-client
 
-[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.svg)](http://travis-ci.org/Automattic/socket.io-client)
+[![Build Status](https://secure.travis-ci.org/socketio/socket.io-client.svg)](http://travis-ci.org/socketio/socket.io-client)
 ![NPM version](https://badge.fury.io/js/socket.io-client.svg)
 ![Downloads](http://img.shields.io/npm/dm/socket.io-client.svg?style=flat)
-[![](http://slack.socket.io/badge.svg)](http://slack.socket.io)
+[![](http://slack.socket.io/badge.svg?)](http://slack.socket.io)
 
 ## How to use
 
@@ -89,7 +89,7 @@ Socket.IO is compatible with [browserify](http://browserify.org/).
   - `reconnectionDelayMax` maximum amount of time to wait between
     reconnections (`5000`). Each attempt increases the reconnection delay by 2x
     along with a randomization as above
-  - `randomizationFactor(`0.5`), 0 <= randomizationFactor <= 1
+  - `randomizationFactor` (`0.5`), 0 <= randomizationFactor <= 1
   - `timeout` connection timeout before a `connect_error`
     and `connect_timeout` events are emitted (`20000`)
   - `autoConnect` by setting this false, you have to call `manager.open`
