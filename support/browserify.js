@@ -28,7 +28,7 @@ function build(fn){
     insertGlobalVars: { global: glob },
     standalone: 'io'
   })
-  .ignore('ws')
+  .exclude('ws')
   .bundle();
 
   bundle.on('error', function (err) {
@@ -48,5 +48,6 @@ function build(fn){
 
 function glob(){
   return 'typeof self !== "undefined" ? self : '
-    + 'typeof window !== "undefined" ? window : {}';
+    + 'typeof window !== "undefined" ? window : '
+    + 'typeof global !== "undefined" ? global : {}';
 }
